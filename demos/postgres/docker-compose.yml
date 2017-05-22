@@ -1,0 +1,8 @@
+postgres_dev:
+  image: postgres:9.1
+  environment: 
+  - POSTGRES_PASSWORD=postgres
+  ports:               
+  - "5432:5432"
+  volumes:
+  - /opt/docker_volumes/postgres_data:/var/lib/postgresql/data
